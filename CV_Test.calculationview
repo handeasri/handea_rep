@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CV_Test" applyPrivilegeType="ANALYTIC_PRIVILEGE" checkAnalyticPrivileges="true" defaultClient="$$client$$" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" translationRelevant="true" visibility="internal" calculationScenarioType="TREE_BASED" dataCategory="DIMENSION" dimensionType="STANDARD" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Projection">
+  <descriptions defaultDescription="CV_Test"/>
+  <metadata changedAt="2016-12-20 16:56:49.684"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources>
+    <DataSource id="ACCOUNT" type="DATA_BASE_TABLE">
+      <viewAttributes allViewAttributes="true"/>
+      <columnObject schemaName="EXTDATA" columnObjectName="ACCOUNT"/>
+    </DataSource>
+  </dataSources>
+  <calculationViews/>
+  <logicalModel id="ACCOUNT">
+    <descriptions/>
+    <attributes>
+      <attribute id="TDL_REF" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="TDL_REF"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="TDL_REF"/>
+      </attribute>
+      <attribute id="TDL_ID" order="2" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="TDL_ID"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="TDL_ID"/>
+      </attribute>
+      <attribute id="FILE_DATE" order="3" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="FILE_DATE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="FILE_DATE"/>
+      </attribute>
+      <attribute id="DIVISION_CODE" order="4" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="DIVISION_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="DIVISION_CODE"/>
+      </attribute>
+      <attribute id="DIVISION_DESCRIPTION" order="5" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="DIVISION_DESCRIPTION"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="DIVISION_DESCRIPTION"/>
+      </attribute>
+      <attribute id="REGION_CODE" order="6" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="REGION_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="REGION_CODE"/>
+      </attribute>
+      <attribute id="REGION_DESCRIPTION" order="7" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="REGION_DESCRIPTION"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="REGION_DESCRIPTION"/>
+      </attribute>
+      <attribute id="STATE_CODE" order="8" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="STATE_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="STATE_CODE"/>
+      </attribute>
+      <attribute id="STATE_DESCRIPTION" order="9" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="STATE_DESCRIPTION"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="STATE_DESCRIPTION"/>
+      </attribute>
+      <attribute id="MARKET_CODE" order="10" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MARKET_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="MARKET_CODE"/>
+      </attribute>
+      <attribute id="MARKET_DESCRIPTION" order="11" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MARKET_DESCRIPTION"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="MARKET_DESCRIPTION"/>
+      </attribute>
+      <attribute id="MARKET_TYPE" order="12" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MARKET_TYPE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="MARKET_TYPE"/>
+      </attribute>
+      <attribute id="STORE_NAME" order="13" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="STORE_NAME"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="STORE_NAME"/>
+      </attribute>
+      <attribute id="STORE_NUMBER" order="14" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="STORE_NUMBER"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="STORE_NUMBER"/>
+      </attribute>
+      <attribute id="ADDRESS" order="15" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="ADDRESS"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="ADDRESS"/>
+      </attribute>
+      <attribute id="CITY" order="16" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CITY"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CITY"/>
+      </attribute>
+      <attribute id="STATE" order="17" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="STATE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="STATE"/>
+      </attribute>
+      <attribute id="ZIP" order="18" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="ZIP"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="ZIP"/>
+      </attribute>
+      <attribute id="CHANNEL" order="19" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CHANNEL"/>
+      </attribute>
+      <attribute id="TRADCHANCD" order="20" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="TRADCHANCD"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="TRADCHANCD"/>
+      </attribute>
+      <attribute id="TRADE_CHANNEL" order="21" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="TRADE_CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="TRADE_CHANNEL"/>
+      </attribute>
+      <attribute id="SUBCHANCD" order="22" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SUBCHANCD"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SUBCHANCD"/>
+      </attribute>
+      <attribute id="SUB_CHANNEL" order="23" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SUB_CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SUB_CHANNEL"/>
+      </attribute>
+      <attribute id="FOODTYPECD" order="24" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="FOODTYPECD"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="FOODTYPECD"/>
+      </attribute>
+      <attribute id="FOOD_TYPE" order="25" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="FOOD_TYPE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="FOOD_TYPE"/>
+      </attribute>
+      <attribute id="CHANNEL_CD" order="26" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CHANNEL_CD"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CHANNEL_CD"/>
+      </attribute>
+      <attribute id="CHAIN_INDICATOR" order="27" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CHAIN_INDICATOR"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CHAIN_INDICATOR"/>
+      </attribute>
+      <attribute id="OWNER_FAM_CODE" order="28" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="OWNER_FAM_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="OWNER_FAM_CODE"/>
+      </attribute>
+      <attribute id="OWNER_CODE" order="29" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="OWNER_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="OWNER_CODE"/>
+      </attribute>
+      <attribute id="OWNER_NAME" order="30" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="OWNER_NAME"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="OWNER_NAME"/>
+      </attribute>
+      <attribute id="MKT_GRP_CODE" order="31" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MKT_GRP_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="MKT_GRP_CODE"/>
+      </attribute>
+      <attribute id="MKT_GRP_NAME" order="32" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MKT_GRP_NAME"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="MKT_GRP_NAME"/>
+      </attribute>
+      <attribute id="LIQUOR_INDICATOR" order="33" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="LIQUOR_INDICATOR"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="LIQUOR_INDICATOR"/>
+      </attribute>
+      <attribute id="WINE_INDICATOR" order="34" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="WINE_INDICATOR"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="WINE_INDICATOR"/>
+      </attribute>
+      <attribute id="BEER_INDICATOR" order="35" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BEER_INDICATOR"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BEER_INDICATOR"/>
+      </attribute>
+      <attribute id="BDN_STORE_NAME" order="36" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_STORE_NAME"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_STORE_NAME"/>
+      </attribute>
+      <attribute id="BDN_ADDRESS" order="37" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_ADDRESS"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_ADDRESS"/>
+      </attribute>
+      <attribute id="BDN_CITY" order="38" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_CITY"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_CITY"/>
+      </attribute>
+      <attribute id="BDN_STATE" order="39" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_STATE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_STATE"/>
+      </attribute>
+      <attribute id="BDN_ZIP" order="40" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_ZIP"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_ZIP"/>
+      </attribute>
+      <attribute id="BDN_CHANNEL" order="41" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_CHANNEL"/>
+      </attribute>
+      <attribute id="BDN_FOOD_TYPE" order="42" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_FOOD_TYPE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_FOOD_TYPE"/>
+      </attribute>
+      <attribute id="BDN_CODE" order="43" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BDN_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="BDN_CODE"/>
+      </attribute>
+      <attribute id="CREATED_DATE" order="44" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CREATED_DATE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CREATED_DATE"/>
+      </attribute>
+      <attribute id="RANK_VOL_STORE_IN_MARKET" order="45" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="RANK_VOL_STORE_IN_MARKET"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="RANK_VOL_STORE_IN_MARKET"/>
+      </attribute>
+      <attribute id="RANK_VOL_STORE_IN_MARKET_CHANNEL" order="46" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="RANK_VOL_STORE_IN_MARKET_CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="RANK_VOL_STORE_IN_MARKET_CHANNEL"/>
+      </attribute>
+      <attribute id="RANK_VOL_STORE_IN_COUNTRY" order="47" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="RANK_VOL_STORE_IN_COUNTRY"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="RANK_VOL_STORE_IN_COUNTRY"/>
+      </attribute>
+      <attribute id="RANK_VOL_STORE_IN_COUNTRY_CHANNEL" order="48" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="RANK_VOL_STORE_IN_COUNTRY_CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="RANK_VOL_STORE_IN_COUNTRY_CHANNEL"/>
+      </attribute>
+      <attribute id="CLUSTERING_1ST_TWO_LETTERS_CODE" order="49" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CLUSTERING_1ST_TWO_LETTERS_CODE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CLUSTERING_1ST_TWO_LETTERS_CODE"/>
+      </attribute>
+      <attribute id="CLUSTERING_TDLINX" order="50" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CLUSTERING_TDLINX"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="CLUSTERING_TDLINX"/>
+      </attribute>
+      <attribute id="LONGITUDE" order="51" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="LONGITUDE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="LONGITUDE"/>
+      </attribute>
+      <attribute id="LATITUDE" order="52" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="LATITUDE"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="LATITUDE"/>
+      </attribute>
+      <attribute id="SFA_SEGMENT_UID" order="53" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SFA_SEGMENT_UID"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SFA_SEGMENT_UID"/>
+      </attribute>
+      <attribute id="SFA_STORE_INCLUDED_TAG" order="54" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SFA_STORE_INCLUDED_TAG"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SFA_STORE_INCLUDED_TAG"/>
+      </attribute>
+      <attribute id="SFA_SEGMENT_DESCRIPTION" order="55" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SFA_SEGMENT_DESCRIPTION"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SFA_SEGMENT_DESCRIPTION"/>
+      </attribute>
+      <attribute id="SFA_TRADE_CHANNEL" order="56" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SFA_TRADE_CHANNEL"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SFA_TRADE_CHANNEL"/>
+      </attribute>
+      <attribute id="SFA_CURRENT_FISCAL_PRD" order="57" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="SFA_CURRENT_FISCAL_PRD"/>
+        <keyMapping schemaName="EXTDATA" columnObjectName="ACCOUNT" columnName="SFA_CURRENT_FISCAL_PRD"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures/>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+        <rectangleSize/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>
